@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" modified="2024-04-07T15:07:44.948Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="XhZ0iyVocmeSyPbm0rJ8" version="24.2.2" type="device">
+  <diagram name="Страница — 1" id="dJ2RGDc316PWSBuT6vaZ">
+    <mxGraphModel dx="2620" dy="988" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-1" target="dlJ6QBAWJ_lvMbcuCEq7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-1" value="Начало" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-2" target="dlJ6QBAWJ_lvMbcuCEq7-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-2" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="160" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-3" value="&lt;pre&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;Ввод:&lt;br/&gt;    - Название города / координаты&lt;br/&gt;&lt;/code&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;    - Проверка валидности координат (если введены)&lt;/code&gt;&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="177" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-5" target="dlJ6QBAWJ_lvMbcuCEq7-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="340" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-5" value="&lt;pre&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;Формирование URL-запроса к API OpenWeatherMap&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="260" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130.00000000000045" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-31" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dlJ6QBAWJ_lvMbcuCEq7-23">
+          <mxGeometry x="-0.119" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-7" target="dlJ6QBAWJ_lvMbcuCEq7-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-32" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dlJ6QBAWJ_lvMbcuCEq7-24">
+          <mxGeometry x="-0.1687" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-7" value="&lt;pre&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;Отправка асинхронного запроса к API&lt;/code&gt;&lt;/pre&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="380" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-9" value="&lt;pre&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;Отображение сообщения об ошибке&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="380" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-11" target="dlJ6QBAWJ_lvMbcuCEq7-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-33" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dlJ6QBAWJ_lvMbcuCEq7-25">
+          <mxGeometry x="-0.0878" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-11" target="dlJ6QBAWJ_lvMbcuCEq7-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="360" />
+              <mxPoint x="-80" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-35" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dlJ6QBAWJ_lvMbcuCEq7-34">
+          <mxGeometry x="-0.9734" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-11" value="&lt;pre&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;Обработка ответа от API&lt;/code&gt;&lt;/pre&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="380" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-12" target="dlJ6QBAWJ_lvMbcuCEq7-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-12" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="650" y="490" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-13" value="&lt;div&gt;&lt;pre&gt;&lt;code role=&quot;text&quot; data-test-id=&quot;code-content&quot; class=&quot;code-container&quot; data-sourcepos=&quot;76:1-110:3&quot;&gt;Извлечение метеоданных:&lt;br&gt;    - Текущая температура&lt;br&gt;    - Скорость ветра&lt;br&gt;    - Вероятность осадков&lt;br&gt;    - Другие данные&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="763" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-14" target="dlJ6QBAWJ_lvMbcuCEq7-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-14" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="620" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-15" value="&lt;pre&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;Вывод:&lt;br/&gt;    - Блок с текущей погодой&lt;br/&gt;    - Блок с прогнозом погоды на ближайшие дни&lt;/code&gt;&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="637" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-16" target="dlJ6QBAWJ_lvMbcuCEq7-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-16" value="&lt;pre&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;Отображение сообщения об ошибке (если есть)&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="720" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-17" target="dlJ6QBAWJ_lvMbcuCEq7-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-17" value="&lt;pre&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;Запись информации об ошибке в журнал (если есть)&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="820" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlJ6QBAWJ_lvMbcuCEq7-18" target="dlJ6QBAWJ_lvMbcuCEq7-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-18" value="&lt;pre&gt;&lt;code data-sourcepos=&quot;76:1-110:3&quot; class=&quot;code-container&quot; data-test-id=&quot;code-content&quot; role=&quot;text&quot;&gt;Обновление данных о погоде через заданный интервал&lt;/code&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="920" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlJ6QBAWJ_lvMbcuCEq7-19" value="Конец" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

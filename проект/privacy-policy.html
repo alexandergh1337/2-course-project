@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/exclamation-mark.png" type="image/png">
+    <style>
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rounded-lg {
+  animation: fadeIn 1s ease;
+}
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold">Политика конфиденциальности</h1>
+    </header>
+    <main class="p-4">
+        <section>
+            <div class="rounded-lg bg-gray-800 p-4 mb-4">
+                <p>Мы уважаем вашу конфиденциальность и стремимся защищать ваши персональные данные. В этой политике
+                    конфиденциальности описывается, какую информацию мы собираем, как мы ее используем и как мы ее
+                    защищаем.</p>
+                <h2 class="text-lg font-semibold mt-4 mb-2">Сбор информации</h2>
+                <p>Мы собираем только ту информацию, которая необходима для предоставления наших услуг, включая ваш
+                    IP-адрес, местоположение, информацию о браузере и устройстве. Мы также можем собирать информацию о
+                    том, как вы взаимодействуете с нашим приложением, чтобы улучшить его работу.</p>
+                <h2 class="text-lg font-semibold mt-4 mb-2">Использование информации</h2>
+                <p>Собранная информация используется исключительно для обеспечения работы нашего приложения и
+                    предоставления соответствующих услуг. Мы не продаем и не передаем вашу информацию третьим лицам, за
+                    исключением случаев, когда это требуется по закону или для оказания услуг, которые вы запрашиваете.
+                    Мы также можем использовать обезличенные данные для анализа и улучшения наших услуг.</p>
+                <h2 class="text-lg font-semibold mt-4 mb-2">Безопасность информации</h2>
+                <p>Мы используем надежные методы шифрования и другие меры безопасности для защиты вашей информации от
+                    несанкционированного доступа, изменения, раскрытия или уничтожения. Однако, следует помнить, что ни
+                    один метод передачи данных через Интернет или метод электронного хранения не может быть полностью
+                    безопасным. Поэтому, хотя мы стремимся обеспечить безопасность вашей информации, мы не можем
+                    гарантировать ее абсолютную безопасность.</p>
+                <h2 class="text-lg font-semibold mt-4 mb-2">Изменения в политике конфиденциальности</h2>
+                <p>Мы можем периодически обновлять эту политику конфиденциальности. Мы уведомим вас об изменениях,
+                    разместив новую версию политики на нашем сайте. Продолжая использовать наше приложение после
+                    внесения изменений, вы соглашаетесь с новой версией политики конфиденциальности.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            const savedSettings = JSON.parse(localStorage.getItem('weatherAppSettings'));
+            const isDarkTheme = savedSettings ? savedSettings.isDarkTheme : true;
+
+            const body = document.querySelector('body');
+            const headerText = document.querySelector('header h1');
+            const mainContent = document.querySelector('main');
+
+            if (isDarkTheme) {
+                document.body.classList.add('bg-gray-900', 'text-white');
+                document.querySelectorAll('.rounded-lg, .bg-gray-200').forEach(element => {
+                    element.classList.remove('bg-gray-200', 'text-black');
+                    element.classList.add('bg-gray-800', 'text-white');
+                });
+                document.querySelectorAll('.text-black').forEach(element => {
+                    element.classList.remove('text-black');
+                    element.classList.add('text-gray-700');
+                });
+                document.querySelectorAll('.bg-gray-400').forEach(element => {
+                    element.classList.remove('bg-gray-400');
+                    element.classList.add('bg-gray-700');
+                });
+                document.querySelectorAll('.modal-content').forEach(element => {
+                    element.classList.remove('bg-gray-700');
+                    element.classList.add('bg-gray-200');
+                });
+            } else {
+                document.body.classList.remove('bg-gray-900', 'text-white');
+                document.querySelectorAll('.rounded-lg, .bg-gray-800').forEach(element => {
+                    element.classList.remove('bg-gray-800', 'text-white');
+                    element.classList.add('bg-gray-200', 'text-black');
+                });
+                document.querySelectorAll('.text-gray-700').forEach(element => {
+                    element.classList.remove('text-gray-700');
+                    element.classList.add('text-black');
+                });
+                document.querySelectorAll('.bg-gray-700').forEach(element => {
+                    element.classList.remove('bg-gray-700');
+                    element.classList.add('bg-gray-400');
+                });
+                document.querySelectorAll('.modal-content').forEach(element => {
+                    element.classList.remove('bg-gray-200');
+                    element.classList.add('bg-gray-700');
+                });
+            }
+        })
+    </script>
+</body>
+
+</html>
