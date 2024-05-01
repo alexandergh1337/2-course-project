@@ -81,7 +81,7 @@
 
 header button,
 #settingsModal button,
-div.mt-4 a {
+section.mt-4 a {
     transition: all 0.2s ease-in-out;
 }
 
@@ -93,7 +93,7 @@ header button:hover {
 button#darkThemeBtn:hover,
 button#celsiusModalBtn:hover,
 button#fahrenheitModalBtn:hover,
-div.mt-4 a:hover {
+section.mt-4 a:hover {
     transform: scale(1.05);
 }
 
