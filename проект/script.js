@@ -1,3 +1,11 @@
+let visitCount = localStorage.getItem('visitCount') || 0;
+
+visitCount++;
+
+localStorage.setItem('visitCount', visitCount);
+
+document.getElementById('visitCounter').innerText = visitCount;
+
 document.addEventListener('DOMContentLoaded', function () {
     const searchForm = document.getElementById('searchForm');
     const cityInput = document.getElementById('cityInput');
@@ -396,10 +404,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     settingsBtn.addEventListener('click', function () {
         settingsModal.classList.remove('hidden');
+        backdrop.classList.remove('hidden');
     });
 
     closeModalBtn.addEventListener('click', function () {
         settingsModal.classList.add('hidden');
+        backdrop.classList.add('hidden');
+    });
+
+    document.addEventListener('click', function (event) {
+        if (event.target === settingsModal || event.target === backdrop) {
+            settingsModal.classList.add('hidden');
+            backdrop.classList.add('hidden');
+        }
     });
 
     celsiusModalBtn.addEventListener('click', function () {
@@ -428,9 +445,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     moreAccordionBtn.addEventListener('click', function () {
         moreAccordionContent.classList.toggle('hidden');
-        const icon = this.querySelector('i');
-        icon.classList.toggle('fa-chevron-down');
-        icon.classList.toggle('fa-chevron-up');
+        const icon = document.getElementById('accordionIcon');
+        icon.classList.toggle('rotate-up');
     });
 
     locationBtn.addEventListener('click', getLocation);
