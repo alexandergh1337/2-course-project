@@ -1,0 +1,116 @@
+#visitCounter {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#forecastCards>div {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: calc(var(--animation-order) * 0.1s);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#weatherBlock {
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#hourlyForecast>div {
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-in-out forwards;
+    animation-delay: calc(var(--animation-order) * 0.1s);
+}
+
+header button,
+#settingsModal button,
+section.mt-4 a {
+    transition: all 0.2s ease-in-out;
+}
+
+header button:hover {
+    transform: scale(1.1);
+}
+
+#settingsModal button#lightThemeBtn:hover,
+button#darkThemeBtn:hover,
+button#celsiusModalBtn:hover,
+button#fahrenheitModalBtn:hover,
+section.mt-4 a:hover {
+    transform: scale(1.05);
+}
+
+#backdrop {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#backdrop:not(.hidden) {
+    opacity: 1;
+}
+
+.rotate-up {
+    transform: rotate(180deg);
+}

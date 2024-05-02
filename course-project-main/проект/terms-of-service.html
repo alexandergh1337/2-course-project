@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользовательское соглашение</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/exclamation-mark.png" type="image/png">
+    <style>
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rounded-lg {
+  animation: fadeIn 1s ease;
+}
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold">Пользовательское соглашение</h1>
+    </header>
+    <main class="p-4">
+        <section>
+            <div class="rounded-lg bg-gray-800 p-4 mb-4">
+                <p>Добро пожаловать в наше приложение! Прежде чем начать использовать наши услуги, пожалуйста,
+                    ознакомьтесь с этим пользовательским соглашением. Используя наше приложение, вы соглашаетесь
+                    соблюдать эти условия.</p>
+                <h2 class="text-lg font-semibold mt-4 mb-2">Использование услуг</h2>
+                <p>Вы соглашаетесь использовать наши услуги только в законных целях и не наносить вред нашей системе или
+                    другим пользователям. Вы не должны использовать наше приложение для распространения незаконного или
+                    оскорбительного контента, нарушения прав интеллектуальной собственности или причинения ущерба другим
+                    лицам.</p>
+                <h2 class="text-lg font-semibold mt-4 mb-2">Интеллектуальная собственность</h2>
+                <p>Все материалы, содержащиеся на нашем сайте и в приложении, включая тексты, изображения, логотипы,
+                    видео и другой контент, являются нашей интеллектуальной собственностью и защищены законами об
+                    авторском праве. Вы не имеете права копировать, распространять, модифицировать или использовать эти
+                    материалы без нашего предварительного письменного разрешения.</p>
+                <h2 class="text-lg font-semibold mt-4 mb-2">Ограничение ответственности</h2>
+                <p>Мы прилагаем все усилия для обеспечения точности и актуальности информации, представленной в нашем
+                    приложении, но не можем гарантировать ее абсолютную безошибочность. Мы не несем ответственности за
+                    любой ущерб, возникший в результате использования нашего приложения, включая, но не ограничиваясь,
+                    прямые, косвенные, случайные, специальные или косвенные убытки.</p>
+                <h2 class="text-lg font-semibold mt-4 mb-2">Изменения в пользовательском соглашении</h2>
+                <p>Мы можем периодически обновлять это пользовательское соглашение. Мы уведомим вас об изменениях,
+                    разместив новую версию соглашения на нашем сайте. Продолжая использовать наше приложение после
+                    внесения изменений, вы соглашаетесь с новой версией пользовательского соглашения.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            const savedSettings = JSON.parse(localStorage.getItem('weatherAppSettings'));
+            const isDarkTheme = savedSettings ? savedSettings.isDarkTheme : true;
+
+            const body = document.querySelector('body');
+            const headerText = document.querySelector('header h1');
+            const mainContent = document.querySelector('main');
+
+            if (isDarkTheme) {
+                document.body.classList.add('bg-gray-900', 'text-white');
+                document.querySelectorAll('.rounded-lg, .bg-gray-200').forEach(element => {
+                    element.classList.remove('bg-gray-200', 'text-black');
+                    element.classList.add('bg-gray-800', 'text-white');
+                });
+                document.querySelectorAll('.text-black').forEach(element => {
+                    element.classList.remove('text-black');
+                    element.classList.add('text-gray-700');
+                });
+                document.querySelectorAll('.bg-gray-400').forEach(element => {
+                    element.classList.remove('bg-gray-400');
+                    element.classList.add('bg-gray-700');
+                });
+                document.querySelectorAll('.modal-content').forEach(element => {
+                    element.classList.remove('bg-gray-700');
+                    element.classList.add('bg-gray-200');
+                });
+            } else {
+                document.body.classList.remove('bg-gray-900', 'text-white');
+                document.querySelectorAll('.rounded-lg, .bg-gray-800').forEach(element => {
+                    element.classList.remove('bg-gray-800', 'text-white');
+                    element.classList.add('bg-gray-200', 'text-black');
+                });
+                document.querySelectorAll('.text-gray-700').forEach(element => {
+                    element.classList.remove('text-gray-700');
+                    element.classList.add('text-black');
+                });
+                document.querySelectorAll('.bg-gray-700').forEach(element => {
+                    element.classList.remove('bg-gray-700');
+                    element.classList.add('bg-gray-400');
+                });
+                document.querySelectorAll('.modal-content').forEach(element => {
+                    element.classList.remove('bg-gray-200');
+                    element.classList.add('bg-gray-700');
+                });
+            }
+        })
+    </script>
+</body>
+
+</html>
